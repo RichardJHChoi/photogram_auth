@@ -41,11 +41,11 @@
         <th>Actions</th>
       </tr>
 
-      <% @user.photo.each do |user_photo| %>
+      <% @photos.each do |photo| %>
       <tr>
-        <td><%= user.photo.caption %></td>
-        <td><%= user.photo.image %></td>
-        <td><%= user.photo.user_id %></td>
+        <td><%= photo.caption %></td>
+        <td><%= photo.image %></td>
+        <td><%= photo.user_id %></td>
         <td>
           <a href="/photos/<%= photo.id %>" class="btn btn-primary">Show</a>
           <a href="/photos/<%= photo.id %>/edit" class="btn btn-warning">Edit</a>
