@@ -7,4 +7,8 @@ class UsersController < ApplicationController
   	@user = User.find(params[:id])
   end
 
+  def my_likes
+  	
+  end
+
 end
